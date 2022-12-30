@@ -18,7 +18,6 @@ anychart.onDocumentReady(function () {
     // create a line chart
     var chart = anychart.line();
 
-    anychart.color("red");
     // create the series and name them
     var temp = chart.line(tempData);
     temp.name("Temperature");
