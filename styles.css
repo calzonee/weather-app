@@ -1,45 +1,14 @@
 * {
     margin: 0;
     font-family: sans-serif;
-}
-
-body {
-}
-
-.base {
-    background-color: #000000;
     color: #ffffff;
+    scroll-behavior: smooth;
 }
 
-.base-left {
+.section01 {
     height: 100vh;
+    box-sizing: border-box;
 }
-
-.base-right {
-    height: calc(100vh - 200px);
-    background-color: #000000;
-}
-
-.base-right h2, hr{
-    font-weight: 100;
-    margin: 0 20px;
-}
-
-/* .base {
-    display: flex;
-}
-
-.base-left{
-    width: 100%;
-}
-
-.base-right {
-    width: 0;
-}
-
-.base-right.active {
-    width: 120%;
-} */
 
 .image {
     background-position: center;
@@ -74,7 +43,6 @@ body {
     margin-right: 18px;
     padding: 6px 13px;
     background-color: #000000bb;
-    color: #ffffff;
     border: solid 1px #ffffff;
     border-radius: 999px;
     font-size: 16px;
@@ -85,7 +53,6 @@ body {
 }
 
 button {
-    color: #ffffff;
     background-color: #000000bb;
     border-radius: 50%;
     height: 45px;
@@ -96,10 +63,6 @@ button {
 button:hover {
     background-color: #a5a5a5c7;
     transition: ease-in 0.2s;
-}
-
-.weather {
-    color: #ffffff;
 }
 
 .main {
@@ -131,11 +94,17 @@ button:hover {
     height: 40px
 }
 
-.footer {
-    display: flex;
-    justify-content: center;
+#footer {
     width: 100%;
     max-width: 420px;
+    text-align: center;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: center;
 }
 
 .more {
@@ -154,14 +123,55 @@ button:hover {
     font-weight: 600;
 }
 
+.arrow {
+    position: relative;
+}
+
+#footer a span {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+
+#footer a {
+    transition: all ease 1s;
+}
+
+#section02 {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.forecast {
+    height: calc(100vh - 200px);
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.forecast h2, hr{
+    font-weight: 100;
+}
+
+
 
 @media screen and (max-width: 400px) {
-    .base-right {
+    .forecast {
         height: calc(100vh - 200px);
         background-color: #000000;
     }
 
-    .base-right h2, hr{
+    .forecast h2, hr{
         font-weight: 100;
         margin: 0 20px;
     }

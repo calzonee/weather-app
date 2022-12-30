@@ -10,46 +10,46 @@
     <title>Weather</title>
 </head>
 <body>
-    <div class="base">
-        <div class="base-left">
-            <div class="image" style="background-image: url(https://source.unsplash.com/1600x900/?landscape);">
-                <div class="gradient">
-                    <div class="card">
-                        <div class="search">
-                            <input type="text" class="searchbar" placeholder="Search" onchange="weather.search()">
-                            <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <div class="section01">
+        <div class="image" style="background-image: url(https://source.unsplash.com/1600x900/?landscape);">
+            <div class="gradient">
+                <div class="card">
+                    <div class="search">
+                        <input type="text" class="searchbar" placeholder="Search" onchange="weather.search()">
+                        <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="weather main">
+                        <div class="main-left">
+                            <p class="city"><b>Berlin</b></p>
+                            <h1 class="temperature">8.1°C</h1>
                         </div>
-                        <div class="weather main">
-                            <div class="main-left">
-                                <p class="city"><b>Berlin</b></p>
-                                <h1 class="temperature">8.1°C</h1>
-                            </div>
-                            <div class="main-right">
-                                <img class="icon" id="icon" src="http://openweathermap.org/img/wn/50d.png"> 
-                                <div class="description">mist</div>
-                            </div>
+                        <div class="main-right">
+                            <img class="icon" id="icon" src="http://openweathermap.org/img/wn/50d.png"> 
+                            <div class="description">mist</div>
                         </div>
                     </div>
-                    <div class="footer">
+                </div>
+                <div id="footer">
+                    <div class="footer-flex">
                         <div class="weather more">
                             <div class="humidity"><p>89%</p>Humidity</div>
                             <div class="wind"><p>3.58km/h</p>Wind speed</div>
                         </div>
                     </div>
+                    <div class="arrow">
+                        <a href="#section02"><span></span></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="base-right">
-            <h2>Weather Forecast</h2>
-            <hr> 
-            <br>
-            <h2>Today</h2>
-
-        </div>
     </div>
-    
-    <div class="extra">
-    
+    <div id="section02">
+        <div class="forecast">
+        <h2>Weather Forecast</h2>
+        <hr> 
+        <br>
+        <h1>Today</h1>
+        </div>
     </div>
 </body>
 </html>
