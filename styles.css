@@ -163,7 +163,11 @@ button:hover {
     font-weight: 100;
 }
 
-
+#chart {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+}
 
 @media screen and (max-width: 400px) {
     .forecast {
