@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/f014915fce.js" crossorigin="anonymous"></script>
     <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/themes/2.0.0/dark_earth.min.js"></script>
     <script src="script.js"></script>
     <title>Weather</title>
 </head>
@@ -51,6 +52,11 @@
         <br>
         <h1>Today</h1>
         <div id="chart"></div>
+        <div id="map"></div>
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoPi6rBDasSMiYJlhuZnBcPR1iDsFixO4&callback=initMap&v=weekly"
+        defer
+      ></script>
         </div>
     </div>
 </body>
