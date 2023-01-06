@@ -41,11 +41,11 @@
     height: calc(45px - 14px);
     width: calc(100% - 92px);
     margin-right: 18px;
-    padding: 6px 13px;
+    padding: 6px 18px;
     background-color: #000000bb;
     border: solid 1px #ffffff;
     border-radius: 999px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .searchbar:focus-visible {
@@ -98,20 +98,20 @@ button:hover {
     width: 100%;
     max-width: 420px;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 75px;
     box-sizing: border-box;
 }
 
 .footer-flex {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .more {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
-    margin: 0 16px 80px;
+    width: 90%;
     background-color: #ffffff44;
     padding: 6px;
     border-radius: 8px;
@@ -124,25 +124,21 @@ button:hover {
 }
 
 .arrow {
-    position: relative;
+    padding-top: 20px;
 }
 
-#footer a span {
-    position: absolute;
-    top: -40px;
-    left: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
-    border-left: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    box-sizing: border-box;
+.arrow i{
+    font-size: 26px;
 }
 
-#footer a {
-    transition: all ease 1s;
+.down-button {
+    border: none;
+    background-color: #ffffff00;
+    text-shadow: 0 0 3px #ffffff;
+}
+
+.down-button:hover {
+    background-color: #ffffff1e;
 }
 
 #section02 {
@@ -184,7 +180,6 @@ button:hover {
 
 @media screen and (max-width: 400px) {
     .forecast {
-        height: calc(100vh - 200px);
         background-color: #000000;
     }
 
